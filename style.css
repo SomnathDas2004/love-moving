@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to top, #080808 0%, #333 100%);
+    overflow: hidden;
+    background-image: url(https://e0.pxfuel.com/wallpapers/238/922/desktop-wallpaper-iphone-x-pink-blue-blur-gradation-thumbnail.jpg);
+  }
+  
+  h1 {
+    margin-top: 150px;
+    color: aqua;
+    font-family: initial;
+    border-color: rgb(151, 102, 12);
+    border-style: solid;
+    border-width: 20px;
+    padding: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    margin-left: 380PX;
+    margin-right: 300px;
+  }
+  
+  h1:hover {
+    color: linear-gradient(to right, aqua, firebrick);
+    /* Or */
+    animation: colorChange 0.5s ease-in-out;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: aqua;
+    }
+    100% {
+      color: firebrick;
+    }
+  }
+  
+  span {
+    background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-64.png");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,   
+   -50%);
+    animation: animate 6s linear;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      filter: hue-rotate(0);
+    }
+  
+    100% {
+      transform: translate(-50%, -5000%);
+      opacity:   
+   0;
+      filter: hue-rotate(8000deg);   
+  
+    }
+  }
